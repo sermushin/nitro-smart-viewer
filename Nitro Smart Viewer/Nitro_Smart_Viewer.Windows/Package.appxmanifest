@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+
+  <Identity Name="01725bb8-e8ef-4d49-a120-2b9e891ab9ea"
+            Publisher="CN=vteimurov"
+            Version="1.0.0.0" />
+
+  <Properties>
+    <DisplayName>Nitro_Smart_Viewer.Windows</DisplayName>
+    <PublisherDisplayName>vteimurov</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+        Executable="$targetnametoken$.exe"
+        EntryPoint="Nitro_Smart_Viewer.Windows.App">
+      <m2:VisualElements
+          DisplayName="Nitro_Smart_Viewer.Windows"
+          Square150x150Logo="Assets\Logo.png"
+          Square30x30Logo="Assets\SmallLogo.png"
+          Description="Nitro_Smart_Viewer.Windows"
+          ForegroundText="light"
+          BackgroundColor="#464646">
+        <m2:SplashScreen Image="Assets\SplashScreen.png" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nitro_Smart_Viewer.DetailPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="20, 40, 20, 20" Android="20, 20, 20, 20" WinPhone="20, 20, 20, 20" />
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
+            <Label x:Name="detailLabel" FontSize="20" FontAttributes="Bold" Text="File name" />
+            <Label x:Name="contentLabel" HeightRequest="300" Text="loading..." />
+            <Button x:Name="dismissButton" Clicked="OnButtonClicked" Text="Close" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
